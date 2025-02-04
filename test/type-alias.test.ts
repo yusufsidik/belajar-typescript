@@ -1,4 +1,4 @@
-import { Category, Product, CustomerType } from "../src/alias";
+import { Category, Product, CustomerType, Seller } from "../src/alias";
 
 describe("Type Alias", function(){
   it("should support in typescript", function(){
@@ -6,10 +6,8 @@ describe("Type Alias", function(){
       id: "1",
       name: "Handphone"
     }
-
-
     
-    const product: Product = {
+    const customer: Product = {
       id: 1,
       name: "Samsung FE 24",
       price: 8000000,
@@ -17,6 +15,15 @@ describe("Type Alias", function(){
       cust_type: CustomerType.PLATINUM
     }
 
-    console.info(product)
+    const seller: Seller = {
+      id: 122,
+      name: "eko",
+      address: "pasundan",
+      nib: "111usaha111",
+      npwp: "111.111.111.111"
+    }
+
+
+    console.info(seller)
   })
 })

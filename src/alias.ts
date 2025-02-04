@@ -12,6 +12,31 @@ export enum CustomerType {
   PLATINUM
 }
 
+export interface Seller {
+  id: number
+  name: string
+  address?:  string
+  readonly nib: string
+  readonly npwp: string
+}
+
+export interface Person {
+  name: string
+  age: number
+}
+
+
+export interface Employee {
+  id: number
+  name: string
+  division: string
+  sayHello(name: string): string
+}
+
+export interface Manager extends Employee {
+  numberOfEmployees: number
+}
+
 export type Product = {
   id: ID
   name: string
@@ -19,5 +44,6 @@ export type Product = {
   category: Category,
   cust_type: CustomerType
 }
+
 
 
